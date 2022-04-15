@@ -1,10 +1,8 @@
-Это то что вам нужно
+command 
 
 cat anna_words.txt | sort | uniq -c >  words_freq.txt 
 
 
-
-А это для общего развития:)
-Этот набор команд делает все тоже самое, но в powershell
+powershell
 
 cat anna_words.txt | sort |Group-Object|Select-Object -property Count,Name |  Out-File -FilePath -File -FilePath C:\Users\анастасия\Desktop\прога\екатерина\дз_2\words_freq.txt
